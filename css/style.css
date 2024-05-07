@@ -74,3 +74,34 @@ font-weight: bold;
         font-size: 1.5rem;
     }
 }
+/* badges sect */
+.badge{
+    border-radius: 20px;
+    padding: 0.5rem  2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    white-space: nowrap;
+
+}
+
+.badge--primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+.badge--secondry {
+    background: var(--color-secondry);
+    color: white;
+}
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .badge{
+        font-size: 1.5rem;
+    }
+    .badge--small{
+        font-size: 1.2rem;
+    }
+}
