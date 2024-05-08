@@ -206,3 +206,24 @@ font-weight: bold;
         font-size: 1.5rem;
     }
 }
+
+/* input sect */
+
+.input{
+    color: var(--color-heading);
+    padding: 1.5rem 3.5rem;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    outline: 0;
+    font-size: 2rem;/* font size of input feild in which we write text*/
+}
+::placeholder{
+    color: #cdcbd7;
+    font-size: 1.5rem;/* font size of prewritin text*/
+}
+
+@media screen and (min-width: 1024px) {
+    .input {
+        font-size: 1.5rem;
+    }
+}
