@@ -145,6 +145,13 @@ font-weight: bold;
 .icon--primary {
     fill: var(--color-primary);
 }
+.icon--white {
+    fill : #fff;
+}
+.icon--small{
+    width: 30px;
+    height: 30px;
+}
 .icon-container {
     display:inline-flex;/* becuase span is an inline element and if we change it to inline block then the icon is not cemtered to center it we use flex which centers it in the icon container. */
     justify-content: center;
@@ -154,6 +161,9 @@ font-weight: bold;
     height: 64px;
     border-radius: 100%;
 
+}
+.icon-container--accent {
+    background: var(--color-accent);
 }
 /* button sect */
 
@@ -249,6 +259,9 @@ font-weight: bold;
     overflow: hidden;
     border-radius: 7px;
     box-shadow: 0 0 20px 10px #f3f3f3;
+}
+.card--testimonial-icon {
+    overflow:inherit;
 }
 .card__header,.card__body{
     padding: 2rem 3rem;/* vertical and horizantal respectively*/
@@ -376,5 +389,44 @@ font-weight: bold;
     }
     .quote{
         font-size:2rem;
+    }
+}
+/* grids */
+.grid{
+    display: grid;
+}
+@media screen and (min-width: 768px){
+    .grid--cols2{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:1024px){
+    .grid--cols3{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* testimonial */
+.testimonial{
+    padding: 3rem;
+
+}
+.testimonial__image {
+    position: relative;
+}
+.testimonial__image > img {
+    width: 100%;
+}
+.testimonial__image > .icon-container {
+    position:absolute;
+    top: 3rem;
+    right:-32px;
+}
+@media screen and (min-width:768px){
+    .testimonial .quote , .testimonial .quote__aurthor {
+        font-size: 2.4rem;
+    }
+    .testimonial .quote {
+        margin-left: 6rem;
     }
 }

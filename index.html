@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body style="padding: 5px;">
     <!-- <h1>heading 1</h1>
     <h2>heading 2</h2>
     <h3>heading 3</h3>
@@ -80,7 +80,7 @@
             <p class="media__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius corrupti eveniet delectus illo inventore quis.</p>
         </div>
     </div> -->
-    <blockquote class="quote">
+    <!-- <blockquote class="quote">
         <p class="quote__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Natus cum porro delectus quia impedit! Voluptatum distinctio dolor esse temporibus vel non omnis officia expedita, cupiditate ea ad animi!
@@ -99,6 +99,45 @@
                 </div>
             </div>
         </footer>
-    </blockquote>
+    </blockquote> -->
+
+    <!-- <div class="grid grid--cols2 grid--cols3">
+        <div style="height: 100px; background: blue;"></div>
+        <div style="height: 100px; background: yellow;"></div>
+        <div style="height: 100px; background: green;"></div>
+    </div> -->
+
+    <div class="card testimonial card--testimonial-icon">
+        <div class="grid grid--cols2">
+            <div class="testimonial__image">
+                <img src="images/testimonial.jpg" alt="pic of man">
+                <span class="icon-container icon-container--accent ">
+                    <svg class="icon icon--white icon--small">
+                        <use xlink:href="images/sprite.svg#quotes"></use>
+                      </svg>
+                </span>
+            </div>
+            <blockquote class="quote">
+                <p class="quote__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Natus cum porro delectus quia impedit! Voluptatum distinctio dolor esse temporibus vel non omnis officia expedita, cupiditate ea ad animi!
+                </p>
+                <footer>
+                    <div class="media">
+                        <div class="media__image">
+                            
+                                <svg class="icon">
+                                    <use xlink:href="images/sprite.svg#line"></use>
+                                  </svg>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title quote__aurthor">Ramain</h3>
+                            <p class="media__body quote__orginization">ceo blah blah</p>
+                        </div>
+                    </div>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
 </body>
 </html>
